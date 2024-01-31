@@ -1,0 +1,87 @@
+body {
+    background-color: #202020 !important;
+    color: white !important;
+}
+
+.navbar {
+    background-color: #282828 !important;
+}
+
+.calcTextField {
+    width: 100%;
+    color: white;
+    font-size: 62px !important;
+    text-align: right !important;
+}
+
+.calcButton {
+    background-color: #282828 !important;
+    border-radius: 100px !important;
+    width: 70px !important;
+    height: 70px !important;
+    font-size: 24px !important;
+    color: white !important;
+}
+
+.calcButtonSpecial {
+    background-color: #7a5af5 !important;
+}
+
+.cardItemTitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.wrapper {
+    max-width: 1200px !important;
+    padding: 80px 30px 80px 30px !important;
+}
+
+.hobbiesHobby {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.hobbiesHobbyIsLast {
+    margin-bottom: 0px;
+}
+
+.hobbiesHobby > div > p {
+    font-size: 18px;
+    color: #cccccc;
+}
+
+.hobbiesHobbyImage {
+    margin-left: 28px;
+    width: 600px !important;
+    height: 350px;
+    border-radius: 8px;
+}
+
+.title {
+    font-size: 42px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.userCard {
+    padding: 15px;
+    background-color: #282828 !important;
+    color: white !important;
+}
+
+@media screen and (max-width: 1150px) {
+    .hobbiesHobby {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .hobbiesHobbyImage {
+        margin-left: 0;
+        width: 100% !important;
+        height: initial;
+    }
+}
