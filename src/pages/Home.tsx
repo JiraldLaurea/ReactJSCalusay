@@ -6,6 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 export default function home() {
     const [text, setText] = useState("Magbabago yung text na to");
@@ -62,16 +63,18 @@ export default function home() {
                     className="mt-4 p-4 rounded"
                 >
                     <h2>My Hobbies</h2>
-                    <p>
+                    <p  style={{color: "#cccccc" }}>
                         Hi! My name is Jirald. By clicking the button below, you
                         will learn more about me.
                     </p>
 
                     <Button
-                        href="/hobbies"
+                        // href="/hobbies"
+                        component={Link}
+                        to="/hobbies"
                         style={{ backgroundColor: "#7a5af5" }}
                         variant="contained"
-                        className="mt-3"
+                        className="mt-3 customStyle"
                     >
                         Learn More
                     </Button>

@@ -12,13 +12,6 @@ type Props = {
     addressSuite: String;
     addressCity: String;
     addressZipcode: String;
-    addressGeoLat?: String;
-    addressGeoLng?: String;
-    phone?: String;
-    website?: String;
-    companyName?: String;
-    companyCatchPhrase?: String;
-    companyBs?: String;
 };
 
 const CardItem = ({
@@ -29,13 +22,6 @@ const CardItem = ({
     addressSuite,
     addressCity,
     addressZipcode,
-    addressGeoLat,
-    addressGeoLng,
-    phone,
-    website,
-    companyName,
-    companyCatchPhrase,
-    companyBs,
 }: Props) => {
     function stringToColor(string: string) {
         let hash = 0;
@@ -86,7 +72,7 @@ const CardItem = ({
                                 style={{
                                     fontSize: "18px",
                                     marginBottom: "0px",
-                                    color: "#ba9ffb"
+                                    color: "#ba9ffb",
                                 }}
                             >
                                 {name}
@@ -100,6 +86,8 @@ const CardItem = ({
                             </Card.Text>
                         </div>
                     </div>
+                    <hr />
+
                     <Card.Text>Email: {email}</Card.Text>
                     <Card.Text>Street: {addressStreet}</Card.Text>
                     <Card.Text>Suite: {addressSuite}</Card.Text>

@@ -4,30 +4,14 @@ import Axios from "axios";
 import { Col, Container, Row } from "react-bootstrap";
 import Title from "../components/Title";
 
-type UsersData = {
-    // name: String;
-    // username: String;
-    // email: String;
-    // addressStreet: String;
-    // addressSuite: String;
-    // addressCity: String;
-    // addressZipcode: String;
-    // addressGeoLat: String;
-    // addressGeoLng: String;
-    // phone: String;
-    // website: String;
-    // companyName: String;
-    // companyCatchPhrase: String;
-    // companyBs: String;
-};
+type Props = {};
 
-export default function Json({}: UsersData) {
-    const [users, setUsers] = useState<UsersData[] | null>(null);
+export default function Json({}: Props) {
+    const [users, setUsers] = useState<[] | null>(null);
 
     useEffect(() => {
         const apiUrl = "https://jsonplaceholder.typicode.com/users";
         Axios.get(apiUrl).then((res) => {
-            console.log(res);
             setUsers(res.data);
         });
     }, []);
@@ -47,13 +31,6 @@ export default function Json({}: UsersData) {
                                 addressSuite={user.address.suite}
                                 addressCity={user.address.city}
                                 addressZipcode={user.address.zipcode}
-                                // addressGeoLat={user.address.geo.lat}
-                                // addressGeoLng={user.address.geo.lng}
-                                // companyBs={user.company.bs}
-                                // companyCatchPhrase={user.company.catchPhrase}
-                                // companyName={user.company.name}
-                                // phone={user.phone}
-                                // website={user.website}
                             />
                         </Col>
                     );

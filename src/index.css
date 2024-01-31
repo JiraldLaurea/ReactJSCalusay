@@ -3,11 +3,31 @@ body {
     color: white !important;
 }
 
+.customStyle:hover {
+    color: white;
+}
+
 .navbar {
     background-color: #282828 !important;
 }
 
+.navbarToggler {
+    color: white !important;
+    border-color: rgb(112, 112, 112) !important;
+}
+
+.navbarToggler .navbar-toggler-icon {
+}
+
+.navlink > a:first-child {
+    color: white !important;
+}
+
 .navlink > a {
+    color: #aaaaaa !important;
+}
+
+.navlink > a:hover {
     color: white !important;
 }
 
@@ -31,6 +51,7 @@ body {
 }
 
 .userCard {
+    padding: 15px;
     background-color: #282828 !important;
     color: white !important;
 }
@@ -44,14 +65,14 @@ body {
 .hobbiesContainer {
     max-width: 1200px !important;
     padding-top: 80px;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
 }
 
 .hobbiesHobby {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 }
 
 .hobbiesHobbyIsLast {

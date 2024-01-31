@@ -13,9 +13,12 @@ import Hobbies from "./pages/Hobbies.tsx";
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>
         <BrowserRouter>
-            <Navbar fixed="top" className="navbar">
+            <Navbar expand="md" fixed="top" className="navbar">
                 <Container>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Toggle
+                        aria-controls="basic-navbar-nav"
+                        className="navbarToggler"
+                    />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto navlink">
                             <Nav.Link

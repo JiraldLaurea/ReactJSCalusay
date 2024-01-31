@@ -4,37 +4,13 @@ import { TextField, Button } from "@mui/material";
 import Box from "@mui/material/Box";
 
 export default function Calculator() {
-    const [expression, setExpression] = useState("0");
-
-    useEffect(() => {
-        const handleKeyPress = (event: any) => {
-            const keyPressed = event.key;
-
-            if (/^[0-9+\-*/=C]$/.test(keyPressed)) {
-                if (keyPressed === "=") {
-                    handleEvaluate();
-                } else if (keyPressed === "C") {
-                    handleClear();
-                } else {
-                    handleButtonClick(keyPressed);
-                }
-            } else if (keyPressed === "Enter") {
-                handleEvaluate();
-            }
-        };
-
-        window.addEventListener("keypress", handleKeyPress);
-
-        return () => {
-            window.removeEventListener("keypress", handleKeyPress);
-        };
-    }, [expression]);
+    const [expression, setExpression]: any = useState("0");
 
     const handleButtonClick = (value: any) => {
         if (expression == "0") {
             setExpression(value);
         } else {
-            setExpression((prevExpression) => prevExpression + value);
+            setExpression((prevExpression: any) => prevExpression + value);
         }
     };
 
@@ -44,7 +20,7 @@ export default function Calculator() {
 
     const handleEvaluate = () => {
         try {
-            setExpression(eval(expression).toString());
+            setExpression(+eval(expression).toFixed(2));
         } catch (error) {
             setExpression("Error");
         }
@@ -80,7 +56,6 @@ export default function Calculator() {
                     {buttonLayout.map((btnValue, index) => (
                         <Col key={index} xs={3} className="mb-2">
                             <Button
-                                type="button"
                                 tabIndex={-1}
                                 className={`${
                                     (index + 1) % 4 === 0 && "calcButtonSpecial"
