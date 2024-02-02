@@ -1,8 +1,6 @@
-import React from "react";
-import { Button, Col } from "react-bootstrap";
-import Card from "react-bootstrap/Card";
-import { Navigate } from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
+import { Col } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
 
 type Props = {
     name: String;
@@ -14,7 +12,7 @@ type Props = {
     addressZipcode: String;
 };
 
-const CardItem = ({
+const JsonCard = ({
     name,
     username,
     email,
@@ -57,7 +55,7 @@ const CardItem = ({
     return (
         <Col>
             <Card
-                className="userCard"
+                className="jsonCard"
                 style={{ width: "100%", marginBottom: "30px" }}
             >
                 <Card.Body>
@@ -99,4 +97,4 @@ const CardItem = ({
     );
 };
 
-export default CardItem;
+export default JsonCard;

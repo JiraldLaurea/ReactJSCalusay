@@ -1,11 +1,79 @@
+/* GENERAL */
+
 body {
     background-color: #202020 !important;
     color: white !important;
 }
 
+.customButton {
+    padding: 8px 24px 8px 24px !important;
+    margin-top: 8px !important;
+}
+
+.title {
+    font-size: 42px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .navbar {
     background-color: #282828 !important;
 }
+
+.circularProgress {
+    color: #a688fa !important;
+}
+
+.wrapper {
+    max-width: 1200px !important;
+    padding: 80px 30px 80px 30px !important;
+}
+
+/* HOME */
+
+.homeTitle {
+    margin-bottom: 24px;
+}
+
+.homeTextField {
+    border-color: red !important;
+}
+
+.homeCard {
+    color: white !important;
+    background-color: #282828 !important;
+}
+
+/* HOBBIES */
+
+.hobbiesHobby {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.hobbiesHobbyIsLast {
+    margin-bottom: 0px;
+}
+
+.hobbiesHobby > div > p {
+    font-size: 18px;
+    color: #cccccc;
+}
+
+.hobbiesHobbyImage {
+    margin-left: 28px;
+    width: 600px !important;
+    height: 350px;
+    border-radius: 8px;
+}
+
+.hobbiesHobbyPlayer {
+    margin-top: 24px !important; /* Set your desired background color for the ReactPlayer component */
+ }
+
+/* CALCULATOR */
 
 .calcTextField {
     width: 100%;
@@ -33,41 +101,9 @@ body {
     margin-bottom: 16px;
 }
 
-.wrapper {
-    max-width: 1200px !important;
-    padding: 80px 30px 80px 30px !important;
-}
+/* JSON */
 
-.hobbiesHobby {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 120px;
-}
-
-.hobbiesHobbyIsLast {
-    margin-bottom: 0px;
-}
-
-.hobbiesHobby > div > p {
-    font-size: 18px;
-    color: #cccccc;
-}
-
-.hobbiesHobbyImage {
-    margin-left: 28px;
-    width: 600px !important;
-    height: 350px;
-    border-radius: 8px;
-}
-
-.title {
-    font-size: 42px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.userCard {
+.jsonCard {
     padding: 15px;
     background-color: #282828 !important;
     color: white !important;
@@ -84,4 +120,11 @@ body {
         width: 100% !important;
         height: initial;
     }
+    .customButton {
+      width: 100%;
+      margin-bottom: 24px !important;
+    }
+    .hobbiesHobbyPlayer {
+        margin-bottom: 24px !important; /* Set your desired background color for the ReactPlayer component */
+     }
 }
