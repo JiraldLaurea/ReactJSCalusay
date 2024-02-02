@@ -6,13 +6,21 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Calculator from "./pages/Calculator.tsx";
 import Home from "./pages/Home.tsx";
 import "bootstrap/dist/css/bootstrap.min.css";
+<<<<<<< HEAD
 import { Container, Nav, Navbar } from "react-bootstrap";
 import Json from "./pages/Json.tsx";
 import Hobbies from "./pages/Hobbies.tsx";
+=======
+import { Container, Nav } from "react-bootstrap";
+import Json from "./pages/Json.tsx";
+import Hobbies from "./pages/Hobbies.tsx";
+import Navbar from "./components/Navbar.tsx";
+>>>>>>> master
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>
         <BrowserRouter>
+<<<<<<< HEAD
             <Navbar expand="md" fixed="top" className="navbar">
                 <Container>
                     <Navbar.Toggle
@@ -39,6 +47,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+=======
+            <Navbar />
+>>>>>>> master
             <Routes>
                 <Route path="/" element={<Home />}></Route>
                 <Route path="/hobbies" element={<Hobbies />}></Route>

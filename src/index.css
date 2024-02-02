@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: #181818 !important;
     color: white !important;
@@ -5,12 +6,31 @@ body {
 
 .customStyle:hover {
     color: white;
+=======
+/* GENERAL */
+
+body {
+    background-color: #202020 !important;
+    color: white !important;
+}
+
+.customButton {
+    padding: 8px 24px 8px 24px !important;
+    margin-top: 8px !important;
+}
+
+.title {
+    font-size: 42px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+>>>>>>> master
 }
 
 .navbar {
     background-color: #282828 !important;
 }
 
+<<<<<<< HEAD
 .navbarToggler {
     color: white !important;
     border-color: rgb(112, 112, 112) !important;
@@ -68,6 +88,34 @@ body {
     padding-bottom: 120px;
 }
 
+=======
+.circularProgress {
+    color: #a688fa !important;
+}
+
+.wrapper {
+    max-width: 1200px !important;
+    padding: 80px 30px 80px 30px !important;
+}
+
+/* HOME */
+
+.homeTitle {
+    margin-bottom: 24px;
+}
+
+.homeTextField {
+    border-color: red !important;
+}
+
+.homeCard {
+    color: white !important;
+    background-color: #282828 !important;
+}
+
+/* HOBBIES */
+
+>>>>>>> master
 .hobbiesHobby {
     display: flex;
     align-items: center;
@@ -91,6 +139,7 @@ body {
     border-radius: 8px;
 }
 
+<<<<<<< HEAD
 .title {
     font-size: 42px;
     margin-top: 40px;
@@ -108,4 +157,64 @@ body {
     button {
         background-color: #f9f9f9;
     }
+=======
+.hobbiesHobbyPlayer {
+    margin-top: 24px !important; /* Set your desired background color for the ReactPlayer component */
+ }
+
+/* CALCULATOR */
+
+.calcTextField {
+    width: 100%;
+    color: white;
+    font-size: 62px !important;
+    text-align: right !important;
+}
+
+.calcButton {
+    background-color: #282828 !important;
+    border-radius: 100px !important;
+    width: 70px !important;
+    height: 70px !important;
+    font-size: 24px !important;
+    color: white !important;
+}
+
+.calcButtonSpecial {
+    background-color: #7a5af5 !important;
+}
+
+.cardItemTitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+/* JSON */
+
+.jsonCard {
+    padding: 15px;
+    background-color: #282828 !important;
+    color: white !important;
+}
+
+@media screen and (max-width: 1150px) {
+    .hobbiesHobby {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .hobbiesHobbyImage {
+        margin-left: 0;
+        width: 100% !important;
+        height: initial;
+    }
+    .customButton {
+      width: 100%;
+      margin-bottom: 24px !important;
+    }
+    .hobbiesHobbyPlayer {
+        margin-bottom: 24px !important; /* Set your desired background color for the ReactPlayer component */
+     }
+>>>>>>> master
 }
