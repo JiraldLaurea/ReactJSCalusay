@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-body {
-    background-color: #181818 !important;
-    color: white !important;
-}
-
-.customStyle:hover {
-    color: white;
-=======
 /* GENERAL */
 
 body {
@@ -23,72 +14,12 @@ body {
     font-size: 42px;
     margin-top: 40px;
     margin-bottom: 40px;
->>>>>>> master
 }
 
 .navbar {
     background-color: #282828 !important;
 }
 
-<<<<<<< HEAD
-.navbarToggler {
-    color: white !important;
-    border-color: rgb(112, 112, 112) !important;
-}
-
-.navbarToggler .navbar-toggler-icon {
-}
-
-.navlink > a:first-child {
-    color: white !important;
-}
-
-.navlink > a {
-    color: #aaaaaa !important;
-}
-
-.navlink > a:hover {
-    color: white !important;
-}
-
-.calcTextField {
-    width: 100%;
-    color: white;
-    font-size: 62px !important;
-    text-align: right !important;
-}
-.calcButton {
-    background-color: #282828 !important;
-    border-radius: 100px !important;
-    width: 70px !important;
-    height: 70px !important;
-    font-size: 24px !important;
-    color: white !important;
-}
-
-.calcButtonSpecial {
-    background-color: #7a5af5 !important;
-}
-
-.userCard {
-    padding: 15px;
-    background-color: #282828 !important;
-    color: white !important;
-}
-
-.cardItemTitle {
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
-}
-
-.hobbiesContainer {
-    max-width: 1200px !important;
-    padding-top: 80px;
-    padding-bottom: 120px;
-}
-
-=======
 .circularProgress {
     color: #a688fa !important;
 }
@@ -115,7 +46,6 @@ body {
 
 /* HOBBIES */
 
->>>>>>> master
 .hobbiesHobby {
     display: flex;
     align-items: center;
@@ -139,25 +69,6 @@ body {
     border-radius: 8px;
 }
 
-<<<<<<< HEAD
-.title {
-    font-size: 42px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
-    }
-    a:hover {
-        color: #747bff;
-    }
-    button {
-        background-color: #f9f9f9;
-    }
-=======
 .hobbiesHobbyPlayer {
     margin-top: 24px !important; /* Set your desired background color for the ReactPlayer component */
  }
@@ -216,5 +127,4 @@ body {
     .hobbiesHobbyPlayer {
         margin-bottom: 24px !important; /* Set your desired background color for the ReactPlayer component */
      }
->>>>>>> master
 }

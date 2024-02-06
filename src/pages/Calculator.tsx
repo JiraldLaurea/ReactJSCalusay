@@ -39,13 +39,8 @@ export default function Calculator() {
         "2",
         "3",
         "-",
-<<<<<<< HEAD
-        "0",
-        "C",
-=======
         "C",
         "0",
->>>>>>> master
         "=",
         "+",
     ];
