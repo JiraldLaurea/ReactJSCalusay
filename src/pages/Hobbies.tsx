@@ -1,11 +1,8 @@
-import React from "react";
 import { Container } from "react-bootstrap";
 import HobbyItem from "../components/HobbyItem";
 import Title from "../components/Title";
 
-type Props = {};
-
-export default function Hobbies({}: Props) {
+export default function Hobbies({}) {
     return (
         <Container className="wrapper">
             <Title title="My Hobbies" />

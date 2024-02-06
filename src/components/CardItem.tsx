@@ -1,8 +1,6 @@
-import React from "react";
-import { Button, Col } from "react-bootstrap";
-import Card from "react-bootstrap/Card";
-import { Navigate } from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
+import { Col } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
 
 type Props = {
     name: String;

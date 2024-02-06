@@ -1,14 +1,11 @@
-import React, { useEffect, useState } from "react";
-import JsonCard from "../components/JsonCard";
-import Axios from "axios";
-import { Col, Container, Row } from "react-bootstrap";
-import Title from "../components/Title";
 import CircularProgress from "@mui/material/CircularProgress";
-import { styled } from "@mui/system";
+import Axios from "axios";
+import { useEffect, useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import JsonCard from "../components/JsonCard";
+import Title from "../components/Title";
 
-type Props = {};
-
-export default function Json({}: Props) {
+export default function Json({}) {
     const [users, setUsers] = useState<[] | null>(null);
 
     useEffect(() => {

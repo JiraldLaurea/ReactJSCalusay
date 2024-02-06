@@ -71,7 +71,7 @@ body {
 
 .hobbiesHobbyPlayer {
     margin-top: 24px !important; /* Set your desired background color for the ReactPlayer component */
- }
+}
 
 /* CALCULATOR */
 
@@ -80,6 +80,19 @@ body {
     color: white;
     font-size: 62px !important;
     text-align: right !important;
+    margin-bottom: 0;
+}
+
+.calcErrorText {
+    margin-bottom: 16px;
+    width: 100%;
+    color: rgb(255, 82, 82);
+    text-align: center;
+    visibility: hidden;
+}
+
+.calcErrorTextTriggered {
+    visibility: visible;
 }
 
 .calcButton {
@@ -121,10 +134,10 @@ body {
         height: initial;
     }
     .customButton {
-      width: 100%;
-      margin-bottom: 24px !important;
+        width: 100%;
+        margin-bottom: 24px !important;
     }
     .hobbiesHobbyPlayer {
         margin-bottom: 24px !important; /* Set your desired background color for the ReactPlayer component */
-     }
+    }
 }

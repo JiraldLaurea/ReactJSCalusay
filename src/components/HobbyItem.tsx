@@ -1,9 +1,5 @@
-import { Button } from "@mui/material";
-import React from "react";
-import { Link } from "react-router-dom";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import CustomButton from "./CustomButton";
 import ReactPlayer from "react-player";
+import CustomButton from "./CustomButton";
 
 type Props = {
     title: string;

@@ -2,7 +2,7 @@ import Avatar from "@mui/material/Avatar";
 import { Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 
-type Props = {
+type UserProps = {
     name: String;
     username: String;
     email: String;
@@ -20,7 +20,9 @@ const JsonCard = ({
     addressSuite,
     addressCity,
     addressZipcode,
-}: Props) => {
+}: UserProps) => {
+
+    // Creates a color value based on the name of the user
     function stringToColor(string: string) {
         let hash = 0;
         let i;
@@ -41,6 +43,7 @@ const JsonCard = ({
         return color;
     }
 
+    // 
     function stringAvatar(name: string) {
         return {
             sx: {
