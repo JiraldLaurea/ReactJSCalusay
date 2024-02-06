@@ -1,6 +1,5 @@
-import { Button } from "@mui/material";
-import React from "react";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
 type Props = {
