@@ -62,7 +62,7 @@ const JsonCard = ({
                 style={{ width: "100%", marginBottom: "30px" }}
             >
                 <Card.Body>
-                    <div className="cardItemTitle">
+                    <div className="jsonCardTitle">
                         <Avatar {...stringAvatar(name.toString())} />
                         <div
                             style={{
