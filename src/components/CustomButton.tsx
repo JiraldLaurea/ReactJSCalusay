@@ -18,7 +18,7 @@ function CustomButton({ link, text, target, hasIcon }: Props) {
             target={target}
             style={{ backgroundColor: "#7a5af5" }}
             variant="contained"
-            className="customButton"
+            className={`customButton ${!hasIcon && "customButtonMobile"}`}
         >
             {text}
             {hasIcon && (

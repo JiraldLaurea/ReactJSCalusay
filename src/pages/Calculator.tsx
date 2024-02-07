@@ -22,7 +22,7 @@ export default function Calculator() {
             (/[+\-*/]$/.test(expression) && value === "0") ||
             expression === "0"
         ) {
-            // If the last input was an operator and the new value is '0',
+            // If the last input is an operator and the new value is '0',
             // do not change the expression
             return;
         } else {
@@ -101,19 +101,7 @@ export default function Calculator() {
                                     } else if (btnValue === "C") {
                                         handleClear();
                                     } else {
-                                        if (
-                                            (btnValue === "+" ||
-                                                btnValue === "-" ||
-                                                btnValue === "*" ||
-                                                btnValue === "/") &&
-                                            expression === "0"
-                                        )
-                                            return;
-                                        else {
-                                            handleButtonClick(
-                                                btnValue.toString()
-                                            );
-                                        }
+                                        handleButtonClick(btnValue.toString());
                                     }
                                 }}
                             >

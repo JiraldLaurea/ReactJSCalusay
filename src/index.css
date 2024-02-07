@@ -154,6 +154,10 @@ body {
         margin-bottom: 24px !important;
     }
 
+    .customButtonMobile {
+        margin-bottom: 0 !important;
+    }
+
     /* Hobbies */
 
     .hobbiesHobby {
@@ -161,11 +165,13 @@ body {
         flex-direction: column;
         align-items: start;
     }
+
     .hobbiesHobbyImage {
         margin-left: 0;
         width: 100% !important;
         height: initial;
     }
+
     .hobbiesHobbyPlayer {
         margin-bottom: 24px !important;
     }
