@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import { useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 export default function Calculator() {
     const [expression, setExpression]: any = useState("0");
@@ -92,7 +92,8 @@ export default function Calculator() {
                             <Button
                                 tabIndex={-1}
                                 className={`${
-                                    (index + 1) % 4 === 0 && "calcButtonsSpecial"
+                                    (index + 1) % 4 === 0 &&
+                                    "calcButtonsSpecial"
                                 } calcButtons`}
                                 onClick={() => {
                                     if (btnValue === "=") {
