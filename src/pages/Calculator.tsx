@@ -72,8 +72,8 @@ export default function Calculator() {
 
     return (
         <Container
-            style={{ maxWidth: "350px" }}
-            className="d-flex flex-column align-items-center justify-content-center vh-100"
+            fluid
+            className="calcContainer d-flex flex-column align-items-center justify-content-center vh-100"
         >
             <p className="calcTextField">{expression}</p>
 
@@ -85,15 +85,15 @@ export default function Calculator() {
                 <small>Invalid expression: Ends with an operator.</small>
             </div>
 
-            <Container className="calcContainer">
-                <Row className="justify-content-center">
+            <Container fluid>
+                <div className="calcGridContainer">
                     {buttonLayout.map((btnValue, index) => (
-                        <Col key={index} xs={3} className="mb-2">
+                        <div key={index} className="calcCol">
                             <Button
                                 tabIndex={-1}
                                 className={`${
-                                    (index + 1) % 4 === 0 && "calcButtonSpecial"
-                                } calcButton`}
+                                    (index + 1) % 4 === 0 && "calcButtonsSpecial"
+                                } calcButtons`}
                                 onClick={() => {
                                     if (btnValue === "=") {
                                         handleEvaluate();
@@ -118,9 +118,9 @@ export default function Calculator() {
                             >
                                 {btnValue}
                             </Button>
-                        </Col>
+                        </div>
                     ))}
-                </Row>
+                </div>
             </Container>
         </Container>
     );

@@ -70,10 +70,21 @@ body {
 }
 
 .hobbiesHobbyPlayer {
-    margin-top: 24px !important; /* Set your desired background color for the ReactPlayer component */
+    margin-top: 24px !important;
 }
 
 /* CALCULATOR */
+
+.calcContainer {
+    max-width: 430px;
+}
+
+.calcGridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
 
 .calcTextField {
     width: 100%;
@@ -81,6 +92,13 @@ body {
     font-size: 62px !important;
     text-align: right !important;
     margin-bottom: 0;
+    padding-right: 15px;
+}
+
+.calcCol {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 .calcErrorText {
@@ -89,29 +107,27 @@ body {
     color: rgb(255, 82, 82);
     text-align: center;
     visibility: hidden;
+    background-color: #282828 !important;
+    padding: 10px 0 10px;
+    border-radius: 5px;
 }
 
 .calcErrorTextTriggered {
     visibility: visible;
 }
 
-.calcButton {
+.calcButtons {
     background-color: #282828 !important;
     border-radius: 100px !important;
-    width: 70px !important;
-    height: 70px !important;
+    width: 100% !important;
+    max-width: 80px;
+    height: 80px !important;
     font-size: 24px !important;
     color: white !important;
 }
 
-.calcButtonSpecial {
+.calcButtonsSpecial {
     background-color: #7a5af5 !important;
-}
-
-.cardItemTitle {
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
 }
 
 /* JSON */
@@ -122,7 +138,24 @@ body {
     color: white !important;
 }
 
+.jsonCardTitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+/* Change various interface if screen width is below 1150px */
+
 @media screen and (max-width: 1150px) {
+    /* General */
+
+    .customButton {
+        width: 100%;
+        margin-bottom: 24px !important;
+    }
+
+    /* Hobbies */
+
     .hobbiesHobby {
         display: flex;
         flex-direction: column;
@@ -133,11 +166,24 @@ body {
         width: 100% !important;
         height: initial;
     }
-    .customButton {
-        width: 100%;
+    .hobbiesHobbyPlayer {
         margin-bottom: 24px !important;
     }
-    .hobbiesHobbyPlayer {
-        margin-bottom: 24px !important; /* Set your desired background color for the ReactPlayer component */
+}
+
+/* Change calculator size when the screen is below 600px */
+
+@media screen and (max-width: 600px) {
+    /* Calculator */
+
+    .calcContainer {
+        max-width: 320px;
+    }
+    .calcButtons {
+        max-width: 60px !important;
+        height: 60px !important;
+    }
+    .calcTextField {
+        font-size: 48px !important;
     }
 }
